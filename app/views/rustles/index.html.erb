@@ -1,0 +1,29 @@
+<%=link_to(new_rustle_path) do %>
+    <button class="btn btn-secondary btn-lg" >new</button>
+ <%end%>
+<h2>Octopus Record</h2>
+<% @rustles.each do |rustle|%>
+    <div class="octopus_rustle">
+        <div class="octopus_icon">
+            <img src = "assets/octopus.png">
+        </div>       
+        <div class = "rustling">
+            <div class = "comments">
+                <p><%= rustle.content %></p>
+            </div>
+        </div>
+    </div>  
+    <%=link_to(edit_rustle_path(rustle.id), data: {confirm:'You want to edit your rustle?'}) do %>
+        <button class="btn btn-secondary btn-lg" >edit</button>
+    <%end%>  
+    <%=link_to(rustle_path(rustle.id), method: :delete, data: {confirm:'Are you sure to delete your rustle?'}) do %>
+        <button class="btn btn-secondary btn-lg" >delete</button>
+    <%end%>
+    <%=link_to(rustle_path(rustle.id)) do %>
+        <button class="btn btn-secondary btn-lg" >show</button>
+    <%end%>  
+<% end%>
+<%#<%= link_to 'new', new_rustle_path%>
+
+    
+    

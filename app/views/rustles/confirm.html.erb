@@ -1,0 +1,7 @@
+<h3>Are you sure to rustle it?</h3>
+<%= form_with(model: @rustle, url: rustles_path, local: true) do |form| %>
+    <%=form.hidden_field :content%>
+    <p>text:<%= @rustle.content%></p>
+    <%= form.submit "rustle"%>
+    <%= form.submit "back", name: "back"%>
+<% end %>

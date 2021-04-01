@@ -1,0 +1,19 @@
+<%= form_with(model: @rustle, local: true, url: choose_new_or_edit) do |form| %>
+  <% if @rustle.errors.any? %>
+      <div id = "error_explanation">
+          <ul>
+          <% @rustle.errors.full_messages.each do |msg|%>
+              <li><%= msg %></li>
+          <% end %>
+          </ul>
+      </div>
+  <% end %>
+  <div class = "rustle_content">
+  <%= form.text_field :content%>
+  </div>
+  <%= form.submit "rustle"%>
+<% end %>
+<br>
+<%=link_to(rustles_path) do %>
+  <button class="btn btn-secondary btn-lg" >back</button>
+<%end%>
