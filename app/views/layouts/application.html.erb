@@ -10,16 +10,16 @@
   </head>
 
   <body>
-    <div class = "wiper">
-      <header>
-        <%= image_tag "head.jpeg", class: "img_head" %>
-      </header>
-      <div class = "main_body">
-        <%= yield %>
-      </div>
-      <footer>
-      <%= image_tag "foot.jpeg", class: "img_foot" %>
-      </footer>
-    </div>     
+      <div class = "wrapper">
+        <header>
+          <%= image_tag "head.jpeg", class: "img_head" %>
+        </header>
+        <div class = "main_body">
+          <%= yield %>
+        </div>
+        <footer>
+        <%= image_tag "foot.jpeg", class: "img_foot" %>
+        </footer>
+      </div>     
   </body>
 </html>

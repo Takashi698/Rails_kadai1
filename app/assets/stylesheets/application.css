@@ -1,6 +1,7 @@
-*{
+ body {
   margin:0;
   padding:0;
+  width: 100%;
   }
 
 .octopus_rustle {
@@ -23,7 +24,7 @@
   }
   
   .octopus_rustle .rustling {
-    width: 00%;
+    width: 100%;
   }
   
   .comments {
@@ -50,11 +51,14 @@
     padding: 0;
   }
   
-  .wiper{
-    min-height: 100vh;
-    position: relative;
-    padding-bottom: 190px;
-    box-sizing: border-box;
+  .wrapper {
+    /* min-height: 50vh; */
+    /* position: relative; */
+    /* padding-top: 10px;
+    padding-bottom: 10px;
+    box-sizing: border-box; */
+    width: 100%;
+    overflow: hidden;
   }
 
   .main_body{
@@ -62,16 +66,18 @@
   }
 
   .head_all{
-    margin: 100;
+    margin: 50;
+    display: inline-block;
   }
   .img_head {
-    width : 100vw ;
+    width : 50%;
+    display: inline; 
   }
 
   .img_foot {
-    width : 100vw ;
-    position: absolute;
-    bottom: 100; 
+    width : 50%;
+    /* position: absolute; */
+    bottom: 0; 
   }
 
 
