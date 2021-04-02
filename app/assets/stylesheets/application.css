@@ -4,8 +4,10 @@
   }
 
   h2 {
-    padding-left: 350px;
-    padding-right: 350px;
+    border: 1px solid #aaa;
+    position: relative;
+    height: 50px;
+    width: 960px;
   }
 
 .octopus_rustle {
@@ -40,6 +42,7 @@
     position: relative; 
     margin: 5px 0 0 105px;
     padding: 17px 13px;
+    width: 960;
     border-radius: 12px;
     background: #d7ebfe;
   }
@@ -80,9 +83,9 @@
   }
   .img_head {
     width: 50%;
+    margin-top: 5px;
     padding-left: 400px;
     padding-right: 400px;
-    margin: 0;
     display: inline-block; 
   }
 
